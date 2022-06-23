@@ -1,0 +1,9 @@
+
+$color-principal: #0096db;
+$font-family: 'arial';
+$font-color: #838383;
+
+
+@mixin mobile {
+    @media (max-width: 768px) { @content; }
+  }

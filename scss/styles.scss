@@ -1,0 +1,155 @@
+@import "variables";
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: $font-family;
+    header {
+        .header__container {
+            padding: 1rem 0;
+            gap: 2rem;
+            .header__content--logo1 {
+                img {
+                    height: 2rem;
+                }
+            }
+            .header__content--logo2 {
+                img {
+                    height: 3rem;
+                }
+            }
+            span{
+                font-size: 3rem;
+                color: grey;
+            }
+        }
+    }
+    .hero__container {
+        .hero__container--img{
+            background-image: url(../image/hero.jpg);
+            height: 50rem;
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            align-items: center;
+            .hero__container--content {
+                display: flex;
+                flex-direction: column;
+                width: 55rem;
+                margin-left: 5rem;
+                gap: 3rem;
+                .hero--title h1{
+                    color: $color-principal;
+                    font-size: 5rem;
+                    font-weight: bold;
+                }
+                .hero--desc h3{
+                    font-size: 3rem;
+                }
+
+                .hero--flags {
+                    img{
+                        height: 4rem;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .info {
+        .info__container {
+            p {
+                font-size: 2.4rem;
+                color: $font-color;
+            }
+        }
+    }
+    .form {
+        .form__container {
+            .form__container--title {
+                h2 {
+                    color: #1655b6;
+                    font-size: 2.6rem;
+                }
+                h3 {
+                    color: $font-color;
+                    font-size: 2.2rem;
+                    margin-top: 4rem;
+                }
+            }
+            form {
+                padding: 0 1rem;
+                .form-input {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 2rem 0;
+                    color: $font-color;
+                    input {
+                        border-radius: 4rem;
+                        border: 1px solid #b4b4b4;
+                        height: 3.5rem;
+                        margin-top: 1rem;
+                        padding: 0 2rem;
+                    }
+                }
+                .btn {
+                    border-radius: 4rem;
+                    font-size: 2rem;
+                    background-color: $color-principal;
+                    margin-top: 3rem;
+                    width: 13rem;
+                    padding: 0.8rem;
+                    &:hover {
+                        background-color: #1655b6;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        background-color: $color-principal;
+        .footer__container {
+            padding: 5rem;
+            .footer--text {
+                color: white;
+                h2 {
+                    font-size: 2.8rem;
+                }
+            }
+            .footer--buttons {
+                display: flex;
+                justify-content: center;
+                @include mobile {
+                    flex-direction: column;
+                    a {
+                        margin-top: 1rem;
+                    }
+                }
+                a {
+                    background: white;
+                    text-decoration: none;
+                    color: black;
+                    padding: 1.5rem 3rem;
+                    border-radius: 4rem;
+                    font-size: 2rem;
+                    margin-right: 2rem;
+                    transition: all .2s ease-in;
+                    &:hover {
+                        background-color: #1655b6;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

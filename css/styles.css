@@ -1,0 +1,135 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "arial";
+}
+body header .header__container {
+  padding: 1rem 0;
+  gap: 2rem;
+}
+body header .header__container .header__content--logo1 img {
+  height: 2rem;
+}
+body header .header__container .header__content--logo2 img {
+  height: 3rem;
+}
+body header .header__container span {
+  font-size: 3rem;
+  color: grey;
+}
+body .hero__container .hero__container--img {
+  background-image: url(../image/hero.jpg);
+  height: 50rem;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+}
+body .hero__container .hero__container--img .hero__container--content {
+  display: flex;
+  flex-direction: column;
+  width: 55rem;
+  margin-left: 5rem;
+  gap: 3rem;
+}
+body .hero__container .hero__container--img .hero__container--content .hero--title h1 {
+  color: #0096db;
+  font-size: 5rem;
+  font-weight: bold;
+}
+body .hero__container .hero__container--img .hero__container--content .hero--desc h3 {
+  font-size: 3rem;
+}
+body .hero__container .hero__container--img .hero__container--content .hero--flags img {
+  height: 4rem;
+  margin-right: 1rem;
+}
+body .info .info__container p {
+  font-size: 2.4rem;
+  color: #838383;
+}
+body .form .form__container .form__container--title h2 {
+  color: #1655b6;
+  font-size: 2.6rem;
+}
+body .form .form__container .form__container--title h3 {
+  color: #838383;
+  font-size: 2.2rem;
+  margin-top: 4rem;
+}
+body .form .form__container form {
+  padding: 0 1rem;
+}
+body .form .form__container form .form-input {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  color: #838383;
+}
+body .form .form__container form .form-input input {
+  border-radius: 4rem;
+  border: 1px solid #b4b4b4;
+  height: 3.5rem;
+  margin-top: 1rem;
+  padding: 0 2rem;
+}
+body .form .form__container form .btn {
+  border-radius: 4rem;
+  font-size: 2rem;
+  background-color: #0096db;
+  margin-top: 3rem;
+  width: 13rem;
+  padding: 0.8rem;
+}
+body .form .form__container form .btn:hover {
+  background-color: #1655b6;
+}
+body .footer {
+  background-color: #0096db;
+}
+body .footer .footer__container {
+  padding: 5rem;
+}
+body .footer .footer__container .footer--text {
+  color: white;
+}
+body .footer .footer__container .footer--text h2 {
+  font-size: 2.8rem;
+}
+body .footer .footer__container .footer--buttons {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  body .footer .footer__container .footer--buttons {
+    flex-direction: column;
+  }
+  body .footer .footer__container .footer--buttons a {
+    margin-top: 1rem;
+  }
+}
+body .footer .footer__container .footer--buttons a {
+  background: white;
+  text-decoration: none;
+  color: black;
+  padding: 1.5rem 3rem;
+  border-radius: 4rem;
+  font-size: 2rem;
+  margin-right: 2rem;
+  transition: all 0.2s ease-in;
+}
+body .footer .footer__container .footer--buttons a:hover {
+  background-color: #1655b6;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
