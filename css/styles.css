@@ -17,10 +17,10 @@ body header .header__container {
   gap: 2rem;
 }
 body header .header__container .header__content--logo1 img {
-  height: 2rem;
+  height: 2.6rem;
 }
 body header .header__container .header__content--logo2 img {
-  height: 3rem;
+  height: 4rem;
 }
 body header .header__container span {
   font-size: 3rem;
@@ -37,9 +37,15 @@ body .hero__container .hero__container--img {
 body .hero__container .hero__container--img .hero__container--content {
   display: flex;
   flex-direction: column;
-  width: 55rem;
-  margin-left: 5rem;
   gap: 3rem;
+}
+body .hero__container .hero__container--img .hero__container--content .hero__content {
+  padding: 0;
+}
+@media (max-width: 768px) {
+  body .hero__container .hero__container--img .hero__container--content .hero__content {
+    padding: 1rem;
+  }
 }
 body .hero__container .hero__container--img .hero__container--content .hero--title h1 {
   color: #0096db;
@@ -96,40 +102,12 @@ body .form .form__container form .btn:hover {
 body .footer {
   background-color: #0096db;
 }
-body .footer .footer__container {
-  padding: 5rem;
-}
-body .footer .footer__container .footer--text {
+body .footer .footer__container .copy {
   color: white;
-}
-body .footer .footer__container .footer--text h2 {
-  font-size: 2.8rem;
-}
-body .footer .footer__container .footer--buttons {
   display: flex;
   justify-content: center;
-}
-@media (max-width: 768px) {
-  body .footer .footer__container .footer--buttons {
-    flex-direction: column;
-  }
-  body .footer .footer__container .footer--buttons a {
-    margin-top: 1rem;
-  }
-}
-body .footer .footer__container .footer--buttons a {
-  background: white;
-  text-decoration: none;
-  color: black;
-  padding: 1.5rem 3rem;
-  border-radius: 4rem;
-  font-size: 2rem;
-  margin-right: 2rem;
-  transition: all 0.2s ease-in;
-}
-body .footer .footer__container .footer--buttons a:hover {
-  background-color: #1655b6;
-  color: white;
+  align-items: center;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
